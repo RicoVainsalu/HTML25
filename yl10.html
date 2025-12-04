@@ -1,26 +1,48 @@
 <!DOCTYPE html>
-<html lang="et">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-    <link rel="manifest" href="img/site.webmanifest">
-    <title>Ülesanne 10 &copy;</title>
-    <meta name="author" content="Rico Vainsalu">
-    <meta name="description" content="Õpime HTML5">
-</head>
-<body>
-    <!-- Rico 19.11.25 -->
-    <h1>ÕPILASE REGISTREERIMISVORM</h1>
-    <form action="#" method="get">
-            <fieldset>
-                <legend>Isikuandmed</legend>
-                <label for="fname">Eesnimi</label>
-                <input type="text" id="fname" required placeholder="nt Rico" maxlength="30">
-            </fieldset>
-
-    </form>
-</body>
-</html>
+<form action="/submit_page" method="get">
+  <h2>Liitu uudiskirjaga</h2>
+  <p>
+    <label for="name">Nimi:</label>
+    <input id="name" name="name" type="text" required>
+  </p>
+  <p>
+    <label for="email">E-post:</label>
+    <input id="email" name="email" type="email" required>
+  </p>
+  <p>
+    <button type="submit">Registreeru</button>
+  </p>
+</form>
+</submit_page?name=Mari&email=mari%40example.com> 
+<form action="#" method="post" autocomplete>
+  ...
+</form>
+<form action="#" method="post">
+  <fieldset>
+    <legend>Kohustuslik info</legend>
+    <label for="kasutaja">Kasutajanimi: </label>
+    <input id="kasutaja" name="kasutaja" type="text"><br>
+    <label for="parool">Parool: </label>
+    <input id="parool" name="parool" type="password"><br>
+  </fieldset>
+</form>
+<input type="text" name="kasutaja">
+<input type="password" name="parool">
+<input type="email" name="ekiri">
+<input type="url" name="www">
+<input type="radio" name="tuba" value="economy"> Economy
+<input type="radio" name="tuba" value="lux" checked> Luksus
+<input type="checkbox" name="yoga"> Jooga
+<input type="checkbox" name="dance"> Tants
+<select name="transport">
+  <option value="auto">Auto</option>
+  <option value="rong">Rong</option>
+  <option value="jalgsi" selected>Jalgsi</option>
+</select>
+<textarea name="kommentaar" rows="4" cols="30"></textarea>
+<label for="email">E-post:</label>
+<input id="email" type="email">
+<label>E-post: <input type="email"></label>
+<button type="submit">Registreeru</button>
+<button type="reset">Tühjenda</button>
+<input name="kasutaja" type="text" placeholder="Kasutajanimi" maxlength="10" required>
